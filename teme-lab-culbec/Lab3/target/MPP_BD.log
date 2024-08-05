@@ -1,0 +1,153 @@
+11 Mar 2024 17:27:58,228 INFO  ro.mpp2024.lab3.CarsDBRepository 21 <init> - Initializing CarsDBRepository with properties: {jdbc.user=mariadb, jdb.pass=mariadb, jdbc.url=jdbc:mariadb://localhost:3306/Lab3} 
+11 Mar 2024 17:27:58,240 TRACE ro.mpp2024.lab3.CarsDBRepository 105 add - Enter adding entity: Id=0 Tesla Model S 2019
+11 Mar 2024 17:27:58,240 TRACE ro.mpp2024.lab3.JdbcUtils 48 getConnection - Enter
+11 Mar 2024 17:27:58,241 TRACE ro.mpp2024.lab3.JdbcUtils 25 getNewConnection - Enter
+11 Mar 2024 17:27:58,241 INFO  ro.mpp2024.lab3.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:mariadb://localhost:3306/Lab3
+11 Mar 2024 17:27:58,241 INFO  ro.mpp2024.lab3.JdbcUtils 31 getNewConnection - user: mariadb
+11 Mar 2024 17:27:58,242 INFO  ro.mpp2024.lab3.JdbcUtils 32 getNewConnection - pass: null
+11 Mar 2024 17:27:58,315 ERROR ro.mpp2024.lab3.JdbcUtils 41 getNewConnection - java.sql.SQLInvalidAuthorizationSpecException: (conn=62) Access denied for user 'culbec'@'localhost' (using password: NO)
+11 Mar 2024 17:27:58,316 TRACE ro.mpp2024.lab3.JdbcUtils 57 getConnection - Exit
+11 Mar 2024 17:29:31,917 INFO  ro.mpp2024.lab3.CarsDBRepository 21 <init> - Initializing CarsDBRepository with properties: {jdbc.user=mariadb, jdbc.url=jdbc:mariadb://localhost:3306/Lab3, jdbc.pass=mariadb} 
+11 Mar 2024 17:29:31,926 TRACE ro.mpp2024.lab3.CarsDBRepository 105 add - Enter adding entity: Id=0 Tesla Model S 2019
+11 Mar 2024 17:29:31,927 TRACE ro.mpp2024.lab3.JdbcUtils 48 getConnection - Enter
+11 Mar 2024 17:29:31,927 TRACE ro.mpp2024.lab3.JdbcUtils 25 getNewConnection - Enter
+11 Mar 2024 17:29:31,927 INFO  ro.mpp2024.lab3.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:mariadb://localhost:3306/Lab3
+11 Mar 2024 17:29:31,927 INFO  ro.mpp2024.lab3.JdbcUtils 31 getNewConnection - user: mariadb
+11 Mar 2024 17:29:31,928 INFO  ro.mpp2024.lab3.JdbcUtils 32 getNewConnection - pass: mariadb
+11 Mar 2024 17:29:32,023 TRACE ro.mpp2024.lab3.JdbcUtils 57 getConnection - Exit with(org.mariadb.jdbc.Connection@5f9edf14)
+11 Mar 2024 17:29:32,034 TRACE ro.mpp2024.lab3.CarsDBRepository 127 add - Exit added successfully Id=0 Tesla Model S 2019
+11 Mar 2024 17:29:32,035 TRACE ro.mpp2024.lab3.CarsDBRepository 160 findAll - Enter cauta toate entitatile...
+11 Mar 2024 17:29:32,035 TRACE ro.mpp2024.lab3.JdbcUtils 48 getConnection - Enter
+11 Mar 2024 17:29:32,035 TRACE ro.mpp2024.lab3.JdbcUtils 25 getNewConnection - Enter
+11 Mar 2024 17:29:32,035 INFO  ro.mpp2024.lab3.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:mariadb://localhost:3306/Lab3
+11 Mar 2024 17:29:32,036 INFO  ro.mpp2024.lab3.JdbcUtils 31 getNewConnection - user: mariadb
+11 Mar 2024 17:29:32,036 INFO  ro.mpp2024.lab3.JdbcUtils 32 getNewConnection - pass: mariadb
+11 Mar 2024 17:29:32,040 TRACE ro.mpp2024.lab3.JdbcUtils 57 getConnection - Exit with(org.mariadb.jdbc.Connection@2f666ebb)
+11 Mar 2024 17:29:32,043 TRACE ro.mpp2024.lab3.CarsDBRepository 189 findAll - Exit with(returnat cu succes toate entitatile)
+11 Mar 2024 17:29:32,043 TRACE ro.mpp2024.lab3.CarsDBRepository 27 findByManufacturer - Enter finding by manufacturer Tesla
+11 Mar 2024 17:29:32,044 TRACE ro.mpp2024.lab3.JdbcUtils 48 getConnection - Enter
+11 Mar 2024 17:29:32,044 TRACE ro.mpp2024.lab3.JdbcUtils 25 getNewConnection - Enter
+11 Mar 2024 17:29:32,044 INFO  ro.mpp2024.lab3.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:mariadb://localhost:3306/Lab3
+11 Mar 2024 17:29:32,044 INFO  ro.mpp2024.lab3.JdbcUtils 31 getNewConnection - user: mariadb
+11 Mar 2024 17:29:32,045 INFO  ro.mpp2024.lab3.JdbcUtils 32 getNewConnection - pass: mariadb
+11 Mar 2024 17:29:32,048 TRACE ro.mpp2024.lab3.JdbcUtils 57 getConnection - Exit with(org.mariadb.jdbc.Connection@14f232c4)
+11 Mar 2024 17:31:16,110 INFO  ro.mpp2024.lab3.CarsDBRepository 21 <init> - Initializing CarsDBRepository with properties: {jdbc.user=mariadb, jdbc.url=jdbc:mariadb://localhost:3306/Lab3, jdbc.pass=mariadb} 
+11 Mar 2024 17:31:16,123 TRACE ro.mpp2024.lab3.CarsDBRepository 105 add - Enter adding entity: Id=0 Tesla Model S 2019
+11 Mar 2024 17:31:16,124 TRACE ro.mpp2024.lab3.JdbcUtils 48 getConnection - Enter
+11 Mar 2024 17:31:16,124 TRACE ro.mpp2024.lab3.JdbcUtils 25 getNewConnection - Enter
+11 Mar 2024 17:31:16,124 INFO  ro.mpp2024.lab3.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:mariadb://localhost:3306/Lab3
+11 Mar 2024 17:31:16,124 INFO  ro.mpp2024.lab3.JdbcUtils 31 getNewConnection - user: mariadb
+11 Mar 2024 17:31:16,125 INFO  ro.mpp2024.lab3.JdbcUtils 32 getNewConnection - pass: mariadb
+11 Mar 2024 17:31:16,231 TRACE ro.mpp2024.lab3.JdbcUtils 57 getConnection - Exit with(org.mariadb.jdbc.Connection@5f9edf14)
+11 Mar 2024 17:31:16,241 TRACE ro.mpp2024.lab3.CarsDBRepository 127 add - Exit added successfully Id=0 Tesla Model S 2019
+11 Mar 2024 17:31:16,242 TRACE ro.mpp2024.lab3.CarsDBRepository 160 findAll - Enter cauta toate entitatile...
+11 Mar 2024 17:31:16,242 TRACE ro.mpp2024.lab3.JdbcUtils 48 getConnection - Enter
+11 Mar 2024 17:31:16,243 TRACE ro.mpp2024.lab3.JdbcUtils 25 getNewConnection - Enter
+11 Mar 2024 17:31:16,243 INFO  ro.mpp2024.lab3.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:mariadb://localhost:3306/Lab3
+11 Mar 2024 17:31:16,243 INFO  ro.mpp2024.lab3.JdbcUtils 31 getNewConnection - user: mariadb
+11 Mar 2024 17:31:16,244 INFO  ro.mpp2024.lab3.JdbcUtils 32 getNewConnection - pass: mariadb
+11 Mar 2024 17:31:16,247 TRACE ro.mpp2024.lab3.JdbcUtils 57 getConnection - Exit with(org.mariadb.jdbc.Connection@2f666ebb)
+11 Mar 2024 17:31:16,250 TRACE ro.mpp2024.lab3.CarsDBRepository 189 findAll - Exit with(returnat cu succes toate entitatile)
+11 Mar 2024 17:31:16,251 TRACE ro.mpp2024.lab3.CarsDBRepository 27 findByManufacturer - Enter finding by manufacturer Tesla
+11 Mar 2024 17:31:16,251 TRACE ro.mpp2024.lab3.JdbcUtils 48 getConnection - Enter
+11 Mar 2024 17:31:16,251 TRACE ro.mpp2024.lab3.JdbcUtils 25 getNewConnection - Enter
+11 Mar 2024 17:31:16,251 INFO  ro.mpp2024.lab3.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:mariadb://localhost:3306/Lab3
+11 Mar 2024 17:31:16,251 INFO  ro.mpp2024.lab3.JdbcUtils 31 getNewConnection - user: mariadb
+11 Mar 2024 17:31:16,252 INFO  ro.mpp2024.lab3.JdbcUtils 32 getNewConnection - pass: mariadb
+11 Mar 2024 17:31:16,255 TRACE ro.mpp2024.lab3.JdbcUtils 57 getConnection - Exit with(org.mariadb.jdbc.Connection@14f232c4)
+11 Mar 2024 17:32:17,300 INFO  ro.mpp2024.lab3.CarsDBRepository 21 <init> - Initializing CarsDBRepository with properties: {jdbc.user=mariadb, jdbc.url=jdbc:mariadb://localhost:3306/Lab3, jdbc.pass=mariadb} 
+11 Mar 2024 17:32:17,310 TRACE ro.mpp2024.lab3.CarsDBRepository 105 add - Enter adding entity: Id=0 Tesla Model S 2019
+11 Mar 2024 17:32:17,311 TRACE ro.mpp2024.lab3.JdbcUtils 48 getConnection - Enter
+11 Mar 2024 17:32:17,311 TRACE ro.mpp2024.lab3.JdbcUtils 25 getNewConnection - Enter
+11 Mar 2024 17:32:17,311 INFO  ro.mpp2024.lab3.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:mariadb://localhost:3306/Lab3
+11 Mar 2024 17:32:17,311 INFO  ro.mpp2024.lab3.JdbcUtils 31 getNewConnection - user: mariadb
+11 Mar 2024 17:32:17,312 INFO  ro.mpp2024.lab3.JdbcUtils 32 getNewConnection - pass: mariadb
+11 Mar 2024 17:32:17,409 TRACE ro.mpp2024.lab3.JdbcUtils 57 getConnection - Exit with(org.mariadb.jdbc.Connection@5f9edf14)
+11 Mar 2024 17:32:17,419 TRACE ro.mpp2024.lab3.CarsDBRepository 127 add - Exit added successfully Id=0 Tesla Model S 2019
+11 Mar 2024 17:32:17,420 TRACE ro.mpp2024.lab3.CarsDBRepository 160 findAll - Enter cauta toate entitatile...
+11 Mar 2024 17:32:17,420 TRACE ro.mpp2024.lab3.JdbcUtils 48 getConnection - Enter
+11 Mar 2024 17:32:17,420 TRACE ro.mpp2024.lab3.JdbcUtils 25 getNewConnection - Enter
+11 Mar 2024 17:32:17,420 INFO  ro.mpp2024.lab3.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:mariadb://localhost:3306/Lab3
+11 Mar 2024 17:32:17,420 INFO  ro.mpp2024.lab3.JdbcUtils 31 getNewConnection - user: mariadb
+11 Mar 2024 17:32:17,421 INFO  ro.mpp2024.lab3.JdbcUtils 32 getNewConnection - pass: mariadb
+11 Mar 2024 17:32:17,424 TRACE ro.mpp2024.lab3.JdbcUtils 57 getConnection - Exit with(org.mariadb.jdbc.Connection@2f666ebb)
+11 Mar 2024 17:32:17,427 TRACE ro.mpp2024.lab3.CarsDBRepository 189 findAll - Exit with(returnat cu succes toate entitatile)
+11 Mar 2024 17:32:17,427 TRACE ro.mpp2024.lab3.CarsDBRepository 27 findByManufacturer - Enter finding by manufacturer Tesla
+11 Mar 2024 17:32:17,427 TRACE ro.mpp2024.lab3.JdbcUtils 48 getConnection - Enter
+11 Mar 2024 17:32:17,428 TRACE ro.mpp2024.lab3.JdbcUtils 25 getNewConnection - Enter
+11 Mar 2024 17:32:17,428 INFO  ro.mpp2024.lab3.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:mariadb://localhost:3306/Lab3
+11 Mar 2024 17:32:17,428 INFO  ro.mpp2024.lab3.JdbcUtils 31 getNewConnection - user: mariadb
+11 Mar 2024 17:32:17,428 INFO  ro.mpp2024.lab3.JdbcUtils 32 getNewConnection - pass: mariadb
+11 Mar 2024 17:32:17,431 TRACE ro.mpp2024.lab3.JdbcUtils 57 getConnection - Exit with(org.mariadb.jdbc.Connection@14f232c4)
+11 Mar 2024 17:40:30,573 INFO  ro.mpp2024.lab3.CarsDBRepository 21 <init> - Initializing CarsDBRepository with properties: {jdbc.user=mariadb, jdbc.url=jdbc:mariadb://localhost:3306/Lab3, jdbc.pass=mariadb} 
+11 Mar 2024 17:40:30,583 TRACE ro.mpp2024.lab3.CarsDBRepository 101 add - Enter adding entity: Id=0 Tesla Model S 2019
+11 Mar 2024 17:40:30,583 TRACE ro.mpp2024.lab3.JdbcUtils 48 getConnection - Enter
+11 Mar 2024 17:40:30,583 TRACE ro.mpp2024.lab3.JdbcUtils 25 getNewConnection - Enter
+11 Mar 2024 17:40:30,583 INFO  ro.mpp2024.lab3.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:mariadb://localhost:3306/Lab3
+11 Mar 2024 17:40:30,584 INFO  ro.mpp2024.lab3.JdbcUtils 31 getNewConnection - user: mariadb
+11 Mar 2024 17:40:30,584 INFO  ro.mpp2024.lab3.JdbcUtils 32 getNewConnection - pass: mariadb
+11 Mar 2024 17:40:30,681 TRACE ro.mpp2024.lab3.JdbcUtils 57 getConnection - Exit with(org.mariadb.jdbc.Connection@5f9edf14)
+11 Mar 2024 17:40:30,691 TRACE ro.mpp2024.lab3.CarsDBRepository 123 add - Exit added successfully Id=0 Tesla Model S 2019
+11 Mar 2024 17:40:30,692 TRACE ro.mpp2024.lab3.CarsDBRepository 156 findAll - Enter cauta toate entitatile...
+11 Mar 2024 17:40:30,692 TRACE ro.mpp2024.lab3.JdbcUtils 48 getConnection - Enter
+11 Mar 2024 17:40:30,692 TRACE ro.mpp2024.lab3.JdbcUtils 25 getNewConnection - Enter
+11 Mar 2024 17:40:30,692 INFO  ro.mpp2024.lab3.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:mariadb://localhost:3306/Lab3
+11 Mar 2024 17:40:30,693 INFO  ro.mpp2024.lab3.JdbcUtils 31 getNewConnection - user: mariadb
+11 Mar 2024 17:40:30,693 INFO  ro.mpp2024.lab3.JdbcUtils 32 getNewConnection - pass: mariadb
+11 Mar 2024 17:40:30,696 TRACE ro.mpp2024.lab3.JdbcUtils 57 getConnection - Exit with(org.mariadb.jdbc.Connection@2f666ebb)
+11 Mar 2024 17:40:30,699 TRACE ro.mpp2024.lab3.CarsDBRepository 185 findAll - Exit with(returnat cu succes toate entitatile)
+11 Mar 2024 17:40:30,700 TRACE ro.mpp2024.lab3.CarsDBRepository 27 findByManufacturer - Enter finding by manufacturer Tesla
+11 Mar 2024 17:40:30,700 TRACE ro.mpp2024.lab3.JdbcUtils 48 getConnection - Enter
+11 Mar 2024 17:40:30,700 TRACE ro.mpp2024.lab3.JdbcUtils 25 getNewConnection - Enter
+11 Mar 2024 17:40:30,700 INFO  ro.mpp2024.lab3.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:mariadb://localhost:3306/Lab3
+11 Mar 2024 17:40:30,701 INFO  ro.mpp2024.lab3.JdbcUtils 31 getNewConnection - user: mariadb
+11 Mar 2024 17:40:30,701 INFO  ro.mpp2024.lab3.JdbcUtils 32 getNewConnection - pass: mariadb
+11 Mar 2024 17:40:30,704 TRACE ro.mpp2024.lab3.JdbcUtils 57 getConnection - Exit with(org.mariadb.jdbc.Connection@14f232c4)
+17 Mar 2024 15:18:45,903 INFO  ro.mpp2024.lab3.CarsDBRepository 21 <init> - Initializing CarsDBRepository with properties: {jdbc.user=mariadb, jdbc.url=jdbc:mariadb://localhost:3306/Lab3, jdbc.pass=mariadb} 
+17 Mar 2024 15:18:45,910 TRACE ro.mpp2024.lab3.CarsDBRepository 97 add - Enter adding entity: Id=0 Tesla Model S 2019
+17 Mar 2024 15:18:45,910 TRACE ro.mpp2024.lab3.JdbcUtils 48 getConnection - Enter
+17 Mar 2024 15:18:45,911 TRACE ro.mpp2024.lab3.JdbcUtils 25 getNewConnection - Enter
+17 Mar 2024 15:18:45,911 INFO  ro.mpp2024.lab3.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:mariadb://localhost:3306/Lab3
+17 Mar 2024 15:18:45,911 INFO  ro.mpp2024.lab3.JdbcUtils 31 getNewConnection - user: mariadb
+17 Mar 2024 15:18:45,911 INFO  ro.mpp2024.lab3.JdbcUtils 32 getNewConnection - pass: mariadb
+17 Mar 2024 15:18:45,991 TRACE ro.mpp2024.lab3.JdbcUtils 57 getConnection - Exit with(org.mariadb.jdbc.Connection@5f9edf14)
+17 Mar 2024 15:18:46,002 TRACE ro.mpp2024.lab3.CarsDBRepository 117 add - Exit added successfully Id=0 Tesla Model S 2019
+17 Mar 2024 15:18:46,002 TRACE ro.mpp2024.lab3.CarsDBRepository 148 findAll - Enter cauta toate entitatile...
+17 Mar 2024 15:18:46,002 TRACE ro.mpp2024.lab3.JdbcUtils 48 getConnection - Enter
+17 Mar 2024 15:18:46,002 TRACE ro.mpp2024.lab3.JdbcUtils 25 getNewConnection - Enter
+17 Mar 2024 15:18:46,002 INFO  ro.mpp2024.lab3.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:mariadb://localhost:3306/Lab3
+17 Mar 2024 15:18:46,003 INFO  ro.mpp2024.lab3.JdbcUtils 31 getNewConnection - user: mariadb
+17 Mar 2024 15:18:46,003 INFO  ro.mpp2024.lab3.JdbcUtils 32 getNewConnection - pass: mariadb
+17 Mar 2024 15:18:46,005 TRACE ro.mpp2024.lab3.JdbcUtils 57 getConnection - Exit with(org.mariadb.jdbc.Connection@2f666ebb)
+17 Mar 2024 15:18:46,007 TRACE ro.mpp2024.lab3.CarsDBRepository 173 findAll - Exit with(returnat cu succes toate entitatile)
+17 Mar 2024 15:18:46,007 TRACE ro.mpp2024.lab3.CarsDBRepository 27 findByManufacturer - Enter finding by manufacturer Tesla
+17 Mar 2024 15:18:46,007 TRACE ro.mpp2024.lab3.JdbcUtils 48 getConnection - Enter
+17 Mar 2024 15:18:46,007 TRACE ro.mpp2024.lab3.JdbcUtils 25 getNewConnection - Enter
+17 Mar 2024 15:18:46,008 INFO  ro.mpp2024.lab3.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:mariadb://localhost:3306/Lab3
+17 Mar 2024 15:18:46,008 INFO  ro.mpp2024.lab3.JdbcUtils 31 getNewConnection - user: mariadb
+17 Mar 2024 15:18:46,008 INFO  ro.mpp2024.lab3.JdbcUtils 32 getNewConnection - pass: mariadb
+17 Mar 2024 15:18:46,010 TRACE ro.mpp2024.lab3.JdbcUtils 57 getConnection - Exit with(org.mariadb.jdbc.Connection@14f232c4)
+25 Mar 2024 12:40:14,454 INFO  ro.mpp2024.lab3.CarsDBRepository 21 <init> - Initializing CarsDBRepository with properties: {jdbc.user=mariadb, jdbc.url=jdbc:mariadb://localhost:3306/Lab3, jdbc.pass=mariadb} 
+25 Mar 2024 12:40:14,461 TRACE ro.mpp2024.lab3.CarsDBRepository 97 add - Enter adding entity: Id=0 Tesla Model S 2019
+25 Mar 2024 12:40:14,461 TRACE ro.mpp2024.lab3.JdbcUtils 48 getConnection - Enter
+25 Mar 2024 12:40:14,462 TRACE ro.mpp2024.lab3.JdbcUtils 25 getNewConnection - Enter
+25 Mar 2024 12:40:14,462 INFO  ro.mpp2024.lab3.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:mariadb://localhost:3306/Lab3
+25 Mar 2024 12:40:14,462 INFO  ro.mpp2024.lab3.JdbcUtils 31 getNewConnection - user: mariadb
+25 Mar 2024 12:40:14,462 INFO  ro.mpp2024.lab3.JdbcUtils 32 getNewConnection - pass: mariadb
+25 Mar 2024 12:40:14,528 TRACE ro.mpp2024.lab3.JdbcUtils 57 getConnection - Exit with(org.mariadb.jdbc.Connection@5f9edf14)
+25 Mar 2024 12:40:14,537 TRACE ro.mpp2024.lab3.CarsDBRepository 117 add - Exit added successfully Id=0 Tesla Model S 2019
+25 Mar 2024 12:40:14,537 TRACE ro.mpp2024.lab3.CarsDBRepository 148 findAll - Enter cauta toate entitatile...
+25 Mar 2024 12:40:14,537 TRACE ro.mpp2024.lab3.JdbcUtils 48 getConnection - Enter
+25 Mar 2024 12:40:14,537 TRACE ro.mpp2024.lab3.JdbcUtils 25 getNewConnection - Enter
+25 Mar 2024 12:40:14,537 INFO  ro.mpp2024.lab3.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:mariadb://localhost:3306/Lab3
+25 Mar 2024 12:40:14,538 INFO  ro.mpp2024.lab3.JdbcUtils 31 getNewConnection - user: mariadb
+25 Mar 2024 12:40:14,538 INFO  ro.mpp2024.lab3.JdbcUtils 32 getNewConnection - pass: mariadb
+25 Mar 2024 12:40:14,540 TRACE ro.mpp2024.lab3.JdbcUtils 57 getConnection - Exit with(org.mariadb.jdbc.Connection@2f666ebb)
+25 Mar 2024 12:40:14,542 TRACE ro.mpp2024.lab3.CarsDBRepository 173 findAll - Exit with(returnat cu succes toate entitatile)
+25 Mar 2024 12:40:14,542 TRACE ro.mpp2024.lab3.CarsDBRepository 27 findByManufacturer - Enter finding by manufacturer Tesla
+25 Mar 2024 12:40:14,542 TRACE ro.mpp2024.lab3.JdbcUtils 48 getConnection - Enter
+25 Mar 2024 12:40:14,542 TRACE ro.mpp2024.lab3.JdbcUtils 25 getNewConnection - Enter
+25 Mar 2024 12:40:14,543 INFO  ro.mpp2024.lab3.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:mariadb://localhost:3306/Lab3
+25 Mar 2024 12:40:14,543 INFO  ro.mpp2024.lab3.JdbcUtils 31 getNewConnection - user: mariadb
+25 Mar 2024 12:40:14,543 INFO  ro.mpp2024.lab3.JdbcUtils 32 getNewConnection - pass: mariadb
+25 Mar 2024 12:40:14,545 TRACE ro.mpp2024.lab3.JdbcUtils 57 getConnection - Exit with(org.mariadb.jdbc.Connection@14f232c4)

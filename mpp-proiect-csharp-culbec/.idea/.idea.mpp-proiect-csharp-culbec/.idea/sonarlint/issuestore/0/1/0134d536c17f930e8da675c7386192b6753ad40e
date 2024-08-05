@@ -1,0 +1,8 @@
+
+Ycsharpsquid:S3011"6Make sure that this accessibility bypass is safe here.(¢—¢Ïøÿÿÿÿ
+pcsharpsquid:S3776È"RRefactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.(å š¹
+scsharpsquid:S1192m"QDefine a constant instead of using this literal 'An error occurred: {0}' 6 times.(‘ÏÕ¦ùÿÿÿÿ
+lcsharpsquid:S1192œ"NDefine a constant instead of using this literal 'An error occurred: ' 4 times.(ÀúŒê
+ncsharpsquid:S1192†"QDefine a constant instead of using this literal 'Sending the request...' 4 times.(ˆ¢ö
+pcsharpsquid:S1192Š"RDefine a constant instead of using this literal 'Reading the response...' 5 times.(Â¨ˆ
+]csharpsquid:S1144¢":Remove the unused private method 'HandleParticipantAdded'.(äœ„£úÿÿÿÿ

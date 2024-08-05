@@ -1,0 +1,69 @@
+syntax = "proto3";
+
+package Protocol;
+
+option csharp_namespace = "NetworkProtos.Protocol";
+
+message UUID {
+  string value = 1;
+}
+
+message Participant {
+  UUID id = 1;
+  string firstName = 2;
+  string lastName = 3;
+  string team = 4;
+  int32 engineCapacity = 5;
+}
+
+message User {
+  int32 id = 1;
+  string firstName = 2;
+  string lastName = 3;
+  string username = 4;
+}
+
+message Race {
+  int32 id = 1;
+  int32 engineCapacity = 2;
+  int32 noParticipants = 3;
+}
+
+message Request {
+  enum type {
+      LOGIN = 0; LOGOUT = 1;
+      ADD_PARTICIPANT = 2; FIND_PARTICIPANTS_BY_TEAM = 3;
+      FIND_RACES = 4; FIND_ENGINE_CAPACITIES = 5;
+  }
+
+  type requestType = 1;
+
+  optional string username = 2;
+  optional string password = 3;
+
+  optional User user = 4;
+
+  optional Participant participant = 5;
+
+  optional string team = 6;
+}
+
+message Response{
+  enum type {
+      OK = 0; ERROR = 1;
+      PARTICIPANT_ADDED = 2;
+      CONNECTION_CLOSED = 3;
+  }
+
+  type responseType = 1;
+
+  optional string errorMessage = 2;
+
+  optional User user = 3;
+  optional Participant participant = 4;
+
+  repeated Race races = 5;
+  repeated int32 engineCapacities = 6;
+
+  repeated Participant participants = 7;
+}

@@ -1,0 +1,41 @@
+syntax = "proto3";
+
+package Protocol;
+
+option java_multiple_files = false;
+option java_outer_classname = "NetworkProtos";
+
+message User {
+  int64 id = 1;
+  string username = 2;
+  string password = 3;
+  string firstName = 4;
+  string lastName = 5;
+}
+
+message Request {
+  enum type {
+    LOGIN = 0; LOGOUT = 1;
+  }
+
+  type requestType = 1;
+
+  optional string username = 2;
+  optional string password = 3;
+
+  optional User user = 4;
+}
+
+message Response{
+  enum type {
+    OK = 0; ERROR = 1;
+    PARTICIPANT_ADDED = 2;
+    CONNECTION_CLOSED = 3;
+  }
+
+  type responseType = 1;
+
+  optional string errorMessage = 2;
+
+  optional User user = 3;
+}

@@ -1,0 +1,164 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:GUI.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="1200" d:DesignHeight="800"
+        x:Class="GUI.Views.MainWindow"
+        x:DataType="vm:MainWindowViewModel"
+        Width="1200" Height="800"
+        RequestedThemeVariant="Light"
+        Icon="/Assets/avalonia-logo.ico"
+        Title="User - Motorcycle Contest">
+
+    <Window.Styles>
+        <Style Selector="TabControl">
+            <Setter Property="Margin" Value="20" />
+        </Style>
+        <Style Selector="DataGrid">
+            <Setter Property="Margin" Value="50 0" />
+            <Setter Property="BorderBrush" Value="Black" />
+            <Setter Property="BorderThickness" Value="1" />
+        </Style>
+        <Style Selector="Border.ParticipantForm">
+            <Setter Property="Width" Value="370" />
+            <Setter Property="Height" Value="370" />
+            <Setter Property="Margin" Value="50 0 " />
+            <Setter Property="Padding" Value="10"/>
+            <Setter Property="Background" Value="Aqua" />
+            <Setter Property="BorderBrush" Value="Black" />
+            <Setter Property="BorderThickness" Value="1" />
+        </Style>
+        <Style Selector="Border.ParticipantForm Label">
+            <Setter Property="Padding" Value=" 20 10" />
+        </Style>
+        <Style Selector="Border.ParticipantForm TextBox">
+            <Setter Property="Width" Value="250" />
+            <Setter Property="Height" Value="20" />
+            <Setter Property="Background" Value="White" />
+            <Setter Property="Foreground" Value="DarkSlateGray" />
+            <Setter Property="HorizontalAlignment" Value="Center" />
+        </Style>
+        <Style Selector="Border.ParticipantForm ComboBox">
+            <Setter Property="Width" Value="250" />
+            <Setter Property="Height" Value="20" />
+            <Setter Property="Background" Value="White" />
+            <Setter Property="PlaceholderForeground" Value="DarkSlateGray" />
+            <Setter Property="HorizontalAlignment" Value="Center" />
+        </Style>
+        <Style Selector="Border.ParticipantForm Button">
+            <Setter Property="Height" Value="30" />
+            <Setter Property="Width" Value="100" />
+            <Setter Property="Background" Value="White" />
+            <Setter Property="BorderBrush" Value="Black" />
+            <Setter Property="BorderThickness" Value="1" />
+            <Setter Property="HorizontalAlignment" Value="Center" />
+            <Setter Property="HorizontalContentAlignment" Value="Center" />
+            <Setter Property="VerticalContentAlignment" Value="Center" />
+        </Style>
+        <Style Selector="Border.TeamForm">
+            <Setter Property="Width" Value="370" />
+            <Setter Property="Height" Value="150" />
+            <Setter Property="Padding" Value="10"/>
+            <Setter Property="Margin" Value="50 0 " />
+            <Setter Property="Background" Value="Aqua" />
+            <Setter Property="BorderBrush" Value="Black" />
+            <Setter Property="BorderThickness" Value="1" />
+        </Style>
+        <Style Selector="Border.TeamForm Label">
+            <Setter Property="Padding" Value=" 20 20 0 0" />
+        </Style>
+        <Style Selector="Border.TeamForm TextBox">
+            <Setter Property="Width" Value="250" />
+            <Setter Property="Height" Value="20" />
+            <Setter Property="Background" Value="White" />
+            <Setter Property="Foreground" Value="DarkSlateGray" />
+            <Setter Property="HorizontalAlignment" Value="Center" />
+        </Style>
+        <Style Selector="Border.TeamForm Button">
+            <Setter Property="Height" Value="30" />
+            <Setter Property="Width" Value="150" />
+            <Setter Property="Background" Value="White" />
+            <Setter Property="BorderBrush" Value="Black" />
+            <Setter Property="BorderThickness" Value="1" />
+            <Setter Property="HorizontalAlignment" Value="Center" />
+            <Setter Property="HorizontalContentAlignment" Value="Center" />
+            <Setter Property="VerticalContentAlignment" Value="Center" />
+        </Style>
+    </Window.Styles>
+
+    <Design.DataContext>
+        <!-- This only sets the DataContext for the previewer in an IDE,
+             to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs) -->
+        <vm:MainWindowViewModel />
+    </Design.DataContext>
+
+    <StackPanel VerticalAlignment="Center">
+        <Label Content="{Binding WelcomeMessage}" HorizontalAlignment="Center" FontSize="30" />
+        <Button HorizontalAlignment="Center" VerticalAlignment="Center"
+                Width="100" Height="30" Margin="0 20 0 20"
+                Background="LightGray" BorderBrush="Black" BorderThickness="1"
+                HorizontalContentAlignment="Center" VerticalContentAlignment="Center"
+            Content="Logout" Command="{Binding LogoutAction}"/>
+        <TabControl Height="600">
+            <TabItem Header="Races">
+                <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                    <Grid VerticalAlignment="Center" RowDefinitions="*" ColumnDefinitions="*, *">
+                        <DataGrid Grid.Column="0"
+                                  ItemsSource="{Binding Races}"
+                                  IsReadOnly="True" GridLinesVisibility="All"
+                                  HorizontalScrollBarVisibility="Hidden">
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Header="Id" Binding="{Binding Id}" />
+                                <DataGridTextColumn Header="Engine Capacity" Binding="{Binding EngineCapacity}" />
+                                <DataGridTextColumn Header="No. Participants" Binding="{Binding NoParticipants}" />
+                            </DataGrid.Columns>
+                        </DataGrid>
+                        <Border Grid.Column="1" Classes="ParticipantForm">
+                            <Grid RowDefinitions="*, *, *, *, *, *, *, *, *">
+                                <Label Grid.Row="0" Content="First Name" />
+                                <TextBox Grid.Row="1" Watermark="Ex: Johnny" Text="{Binding FirstName}" />
+                                <Label Grid.Row="2" Content="Last Name" />
+                                <TextBox Grid.Row="3" Watermark="Ex: Bravo" Text="{Binding LastName}" />
+                                <Label Grid.Row="4" Content="Team" />
+                                <TextBox Grid.Row="5" Watermark="Ex: Honda" Text="{Binding Team}" />
+                                <Label Grid.Row="6" Content="Engine Capacity" />
+                                <ComboBox Grid.Row="7" PlaceholderText="Select the engine capacity..."
+                                          ItemsSource="{Binding EngineCapacities}"
+                                          SelectedIndex="{Binding SelectedEngineCapacity}" />
+                                <Button Grid.Row="8" Content="Add" Command="{Binding AddAction}" />
+                            </Grid>
+                        </Border>
+                    </Grid>
+                </StackPanel>
+
+            </TabItem>
+            <TabItem Header="Participants">
+                <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                    <Grid VerticalAlignment="Center" RowDefinitions="*" ColumnDefinitions="*, *">
+                        <DataGrid Grid.Column="0"
+                                  ItemsSource="{Binding ParticipantsOfTeam, Mode=OneWay}"
+                                  IsReadOnly="True" GridLinesVisibility="All"
+                                  HorizontalScrollBarVisibility="Hidden"
+                                  Height="370">
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Header="First Name" Binding="{Binding FirstName}" />
+                                <DataGridTextColumn Header="Last Name" Binding="{Binding LastName}" />
+                                <DataGridTextColumn Header="Team" Binding="{Binding Team}" />
+                                <DataGridTextColumn Header="Engine Capacity" Binding="{Binding EngineCapacity}" />
+                            </DataGrid.Columns>
+                        </DataGrid>
+                        <Border Grid.Column="1" Classes="TeamForm">
+                            <Grid RowDefinitions="*, *, *">
+                                <Label Grid.Row="0" Content="Team" />
+                                <TextBox Grid.Row="1" Watermark="Ex: Honda" Text="{Binding TeamSearch}" />
+                                <Button Grid.Row="2" Content="Show Participants" Command="{Binding ShowParticipantsAction}" />
+                            </Grid>
+                        </Border>
+                    </Grid>
+                </StackPanel>
+            </TabItem>
+        </TabControl>
+    </StackPanel>
+
+</Window>

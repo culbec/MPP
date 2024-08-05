@@ -1,0 +1,46 @@
+plugins {
+    id 'java'
+}
+
+group = 'ro.mpp'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation platform('org.junit:junit-bom:5.10.0')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+
+    // https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core
+    implementation group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.23.1'
+    // https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-api
+    implementation group: 'org.apache.logging.log4j', name: 'log4j-api', version: '2.23.1'
+    // https://mvnrepository.com/artifact/org.springframework.security/spring-security-core
+    implementation group: 'org.springframework.security', name: 'spring-security-crypto', version: '6.2.3'
+
+    // https://mvnrepository.com/artifact/org.hibernate/hibernate-core
+    implementation 'org.hibernate:hibernate-core:6.5.1.Final'
+    // https://mvnrepository.com/artifact/org.hibernate.orm/hibernate-community-dialects
+    implementation 'org.hibernate.orm:hibernate-community-dialects:6.5.1.Final'
+    // https://mvnrepository.com/artifact/org.hibernate.validator/hibernate-validator
+    implementation 'org.hibernate.validator:hibernate-validator:8.0.1.Final'
+
+    // https://mvnrepository.com/artifact/org.springframework/spring-context
+    implementation 'org.springframework:spring-context:6.1.7'
+    // https://mvnrepository.com/artifact/org.springframework/spring-beans
+    implementation 'org.springframework:spring-beans:6.1.7'
+
+
+    // https://mvnrepository.com/artifact/org.mariadb.jdbc/mariadb-java-client
+    runtimeOnly group: 'org.mariadb.jdbc', name: 'mariadb-java-client', version: '3.3.3'
+
+
+    implementation project(':Model')
+    implementation project(':Common')
+}
+
+test {
+    useJUnitPlatform()
+}

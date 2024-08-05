@@ -1,0 +1,17 @@
+<Configuration status="info">
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="SERVER - %d{DATE} %-5level %class{36} %L %M - %msg%n"/>
+        </Console>
+        <RollingFile name="log" fileName="target/Server.log" append="true" filePattern="target/Server-%d{MM-dd-yyyy}.log.gz">
+            <PatternLayout pattern="SERVER - %d{DATE} %-5level %class{36} %L %M - %msg%n"/>
+            <SizeBasedTriggeringPolicy size="10 MB"/>
+        </RollingFile>
+    </Appenders>
+    <Loggers>
+        <Root level="trace">
+            <AppenderRef ref="Console"/>
+            <AppenderRef ref="log"/>
+        </Root>
+    </Loggers>
+</Configuration>

@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MotorcycleContest", "MotorcycleContest\MotorcycleContest.csproj", "{D3850184-F333-430F-B0D8-BA0C9E3CF7CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{82347D6A-BA72-44AB-B7BC-77A84CFB7425}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConnectionUtils", "ConnectionUtils\ConnectionUtils.csproj", "{56EAA11A-8C8F-4E29-AE10-36919128D414}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D3850184-F333-430F-B0D8-BA0C9E3CF7CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3850184-F333-430F-B0D8-BA0C9E3CF7CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3850184-F333-430F-B0D8-BA0C9E3CF7CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3850184-F333-430F-B0D8-BA0C9E3CF7CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82347D6A-BA72-44AB-B7BC-77A84CFB7425}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82347D6A-BA72-44AB-B7BC-77A84CFB7425}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82347D6A-BA72-44AB-B7BC-77A84CFB7425}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82347D6A-BA72-44AB-B7BC-77A84CFB7425}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56EAA11A-8C8F-4E29-AE10-36919128D414}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56EAA11A-8C8F-4E29-AE10-36919128D414}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56EAA11A-8C8F-4E29-AE10-36919128D414}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56EAA11A-8C8F-4E29-AE10-36919128D414}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

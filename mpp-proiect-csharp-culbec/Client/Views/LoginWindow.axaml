@@ -1,0 +1,73 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:GUI.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="GUI.Views.LoginWindow"
+        x:DataType="vm:LoginWindowViewModel"
+        Width="800" Height="450"
+        RequestedThemeVariant="Light"
+        Icon="/Assets/motorbike.ico"
+        Title="Login - Motorcycle Contest">
+
+    <Window.Styles>
+        <Style Selector=".LoginForm Label">
+            <Setter Property="Margin" Value="50 20 0 5" />
+            <Setter Property="HorizontalAlignment" Value="Left" />
+        </Style>
+        <Style Selector=".LoginForm TextBox">
+            <Setter Property="Margin" Value="50 0 50 0" />
+            <Setter Property="Background" Value="White" />
+            <Setter Property="HorizontalAlignment" Value="Stretch" />
+        </Style>
+        <Style Selector=".LoginForm TextBlock#ErrorTextBlock">
+            <Setter Property="Margin" Value="50 10 50 10" />
+        </Style>
+        <Style Selector=".LoginForm Button">
+            <Setter Property="Width" Value="80" />
+            <Setter Property="Margin" Value="50 20 50 0" />
+            <Setter Property="Background" Value="White" />
+            <Setter Property="BorderBrush" Value="Black" />
+            <Setter Property="HorizontalAlignment" Value="Center" />
+            <Setter Property="HorizontalContentAlignment" Value="Center" />
+            <Setter Property="VerticalContentAlignment" Value="Center" />
+        </Style>
+        <Style Selector=".LoginForm Button:pointerover">
+            <Setter Property="Background" Value="WhiteSmoke" />
+        </Style>
+    </Window.Styles>
+
+    <Design.DataContext>
+        <!-- This only sets the DataContext for the previewer in an IDE,
+             to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs) -->
+        <vm:LoginWindowViewModel />
+    </Design.DataContext>
+
+    <DockPanel LastChildFill="False" HorizontalAlignment="Center">
+        <Border Margin="40 0 40 0 " Width="200"
+                HorizontalAlignment="Center">
+            <Image Height="200" Width="200"
+                   VerticalAlignment="Center"
+                   Source="../Assets/motorbike.ico" />
+        </Border>
+        <Border Background="Aqua"
+                BorderBrush="Black"
+                BorderThickness="2"
+                Margin="40 20 20 20" Height="400" Width="400"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center">
+            <Grid Classes="LoginForm" VerticalAlignment="Center" RowDefinitions="*,*,*,*,*,*">
+
+                <Label Grid.Row="0" Content="Username" />
+                <TextBox Grid.Row="1" Watermark="Enter your username..."
+                         Text="{Binding Username}" />
+                <Label Grid.Row="2" Content="Password" />
+                <TextBox Grid.Row="3" PasswordChar="*" Watermark="Enter your password..."
+                         Text="{Binding Password}" />
+                <TextBlock Grid.Row="4" x:Name="ErrorTextBlock" Text="{Binding ErrorMessage}" Foreground="Red" />
+                <Button Grid.Row="5" Content="Login" Command="{Binding LoginAction}" />
+            </Grid>
+        </Border>
+    </DockPanel>
+</Window>
